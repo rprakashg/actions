@@ -15,5 +15,7 @@ RUN	apk add --no-cache \
 
 COPY gitleak.sh /usr/bin/gitleak.sh
 
+RUN chmod +x /usr/bin/gitleak.sh
+
 ENTRYPOINT ["gitleak.sh"]
 
